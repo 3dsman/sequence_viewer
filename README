@@ -1,0 +1,4 @@
+This software is a very simple and lightweight image sequence viewer.
+
+To use it you just have to drag'n'drop the first image of your sequence onto the executable to open the sequence.
+It can auto detect start, end and steps and have some cool options (try sequence_viewer --help).

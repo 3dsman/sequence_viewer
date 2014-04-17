@@ -1,0 +1,133 @@
+# depslib dependency file v1.0
+1395060299 source:/home/seb/Projets/dev/viewer_freeimage/viewer_freeimage/main.cpp
+	<stdlib.h>
+	<stdio.h>
+	<string.h>
+	<chrono>
+	<thread>
+	<glfw3.h>
+	<GL/glu.h>
+	<iostream>
+	<math.h>
+	"FreeImage.h"
+	"tiles.h"
+	"sequence.h"
+
+1290290544 /home/seb/Projets/dev/viewer_freeimage/viewer_freeimage/FreeImage.h
+	<wchar.h>
+	<inttypes.h>
+
+1395056378 /home/seb/Projets/dev/viewer_freeimage/viewer_freeimage/tiles.h
+	<stdlib.h>
+	<stdio.h>
+	<iostream>
+	<glfw3.h>
+	"FreeImage.h"
+
+1290600094 /home/seb/Projets/dev/viewer_freeimage/viewer_freeimage/sequence.h
+	"tiles.h"
+
+1395060324 source:/home/seb/Projets/dev/viewer_freeimage/viewer_freeimage/sequence.cpp
+	"sequence.h"
+	<iostream>
+	<fstream>
+	<stdio.h>
+	<string.h>
+
+1395060332 source:/home/seb/Projets/dev/viewer_freeimage/viewer_freeimage/tiles.cpp
+	<GL/gl.h>
+	<GL/glext.h>
+	"tiles.h"
+	<stdio.h>
+	<string.h>
+
+1395066797 source:/home/seb/Projets/dev/viewer_freeimage/viewer_freeimage/sequance_viewer/main.cpp
+	<stdlib.h>
+	<stdio.h>
+	<string.h>
+	<chrono>
+	<thread>
+	<glfw3.h>
+	<GL/glu.h>
+	<iostream>
+	<math.h>
+	"FreeImage.h"
+	"tiles.h"
+	"sequence.h"
+
+1395056378 /home/seb/Projets/dev/viewer_freeimage/viewer_freeimage/sequance_viewer/tiles.h
+	<stdlib.h>
+	<stdio.h>
+	<iostream>
+	<glfw3.h>
+	"FreeImage.h"
+
+1395064642 /home/seb/Projets/dev/viewer_freeimage/viewer_freeimage/sequance_viewer/sequence.h
+	"tiles.h"
+
+1290290544 /home/seb/Projets/dev/viewer_freeimage/viewer_freeimage/sequance_viewer/FreeImage.h
+	<wchar.h>
+	<inttypes.h>
+
+1395064712 source:/home/seb/Projets/dev/viewer_freeimage/viewer_freeimage/sequance_viewer/sequence.cpp
+	"sequence.h"
+	<iostream>
+	<fstream>
+	<stdio.h>
+	<string.h>
+
+1395060799 source:/home/seb/Projets/dev/viewer_freeimage/viewer_freeimage/sequance_viewer/tiles.cpp
+	<GL/gl.h>
+	<GL/glext.h>
+	"tiles.h"
+	<stdio.h>
+	<string.h>
+	"FreeImage.h"
+
+1397661833 source:c:\users\seb\documents\projets\sequance_viewer\main.cpp
+	<stdlib.h>
+	<stdio.h>
+	<string.h>
+	<chrono>
+	<thread>
+	<windows.h>
+	<unistd.h>
+	<glfw3.h>
+	<GL/glu.h>
+	<iostream>
+	<math.h>
+	<tinythread.h>
+	"FreeImage.h"
+	"tiles.h"
+	"sequence.h"
+
+1290294144 c:\users\seb\documents\projets\sequance_viewer\freeimage.h
+	<wchar.h>
+	<inttypes.h>
+
+1397661328 c:\users\seb\documents\projets\sequance_viewer\tiles.h
+	<stdlib.h>
+	<stdio.h>
+	<string.h>
+	<iostream>
+	<glfw3.h>
+	"FreeImage.h"
+
+1397661475 c:\users\seb\documents\projets\sequance_viewer\sequence.h
+	"tiles.h"
+
+1397661497 source:c:\users\seb\documents\projets\sequance_viewer\sequence.cpp
+	"sequence.h"
+	<iostream>
+	<fstream>
+	<stdio.h>
+	<string.h>
+
+1397661335 source:c:\users\seb\documents\projets\sequance_viewer\tiles.cpp
+	<GL/gl.h>
+	<GL/glext.h>
+	"tiles.h"
+	<stdio.h>
+	<string.h>
+	"FreeImage.h"
+
