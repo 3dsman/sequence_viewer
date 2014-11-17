@@ -6,18 +6,17 @@
 // is no issue, since we only have one texture).
 //========================================================================
 
-
 #include <stdlib.h>    // For malloc() etc.
 #include <stdio.h>
 #include <string.h>
-#include <chrono>
-#include <thread>
+//#include <chrono>
+//#include <thread>
 #ifdef _WIN32
 #include <windows.h>
 #else
 #include <unistd.h>
 #endif
-#include <glfw3.h>
+#include <GLFW/glfw3.h>
 #include <GL/glu.h>
 #include <iostream>
 #include <math.h>
@@ -47,7 +46,7 @@ bool run = true;
 unsigned int curTime=0;
 int sens = 1;
 bool pingpong = false;
-bool pause = false;
+bool waitFlag = false;
 bool repeat = true;
 unsigned int FirstFrame;
 unsigned int LastFrame;
@@ -84,26 +83,26 @@ static void My_Key_Callback(GLFWwindow* window, int key, int scancode, int actio
         //exit
         if (key == GLFW_KEY_ESCAPE)
             glfwSetWindowShouldClose(window, GL_TRUE);
-        //pause
+        //waitFlag
         if (key == GLFW_KEY_SPACE)
-            pause = !pause;
+            waitFlag = !waitFlag;
         //frame by frame and playing
         if (key == GLFW_KEY_UP || key == GLFW_KEY_DOWN)
         {
             repeat = (key == GLFW_KEY_DOWN);
             curTime = 0;
-            pause = false;
+            waitFlag = false;
         }
         if (key == GLFW_KEY_RIGHT)
         {
             if(curTime<LastFrame-FirstFrame) curTime++;
-            pause = true;
+            waitFlag = true;
         }
 
         if (key == GLFW_KEY_LEFT)
         {
             if(curTime>0) curTime--;
-            pause = true;
+            waitFlag = true;
         }
 
         // scale
@@ -355,7 +354,7 @@ int main( int argc,char *argv[])
 
         if (mouseXInit == -1)
         {
-            if (!pause)curTime += sens;
+            if (!waitFlag)curTime += sens;
         }
         else
         {
@@ -378,7 +377,7 @@ int main( int argc,char *argv[])
             else
             {
                 curTime = seqLen-1;
-                pause = true;
+                waitFlag = true;
             }
         }
 
@@ -396,7 +395,7 @@ int main( int argc,char *argv[])
             else
             {
                 curTime = 0;
-                pause = true;
+                waitFlag = true;
             }
         }
         tfr += t;
@@ -454,7 +453,7 @@ int main( int argc,char *argv[])
         t = glfwGetTime();
         glfwSetTime(0);
         tthread::chrono::milliseconds dura( (int)(40 - t));
-        this_thread::sleep_for( dura );
+        tthread::this_thread::sleep_for( dura );
 
         //tfr = glfwGetTime();
 

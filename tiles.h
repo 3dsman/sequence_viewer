@@ -5,7 +5,7 @@
 #include <stdio.h>
 #include <string.h>
 #include <iostream>
-#include <glfw3.h>
+#include <GLFW/glfw3.h>
 #include "FreeImage.h"
 //  #include "CImg.h"
 //  using namespace cimg_library;
